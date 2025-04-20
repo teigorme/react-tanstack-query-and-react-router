@@ -4,4 +4,5 @@ export default [
   index("routes/home.tsx"),
   route("traditional-super-heroes", "routes/traditional-super-heroes.tsx"),
   route("rq-super-heroes", "routes/rq-super-heroes.tsx"),
+  route("rq-super-heroes/:id", "routes/rq-super-heroe.tsx"),
 ] satisfies RouteConfig;

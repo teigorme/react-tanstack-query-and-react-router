@@ -1,5 +1,6 @@
 import { useQuery } from "@tanstack/react-query";
 import { BASEURL } from "constants/base-url";
+import { Link } from "react-router";
 import type { Hero } from "types/super-heroes";
 
 export default function RqSuperHeroes() {
@@ -22,7 +23,9 @@ export default function RqSuperHeroes() {
     <div>
       <h2 className="text-2xl font-semibold">RQ Super Heroes</h2>
       {data.map((hero) => (
-        <div key={hero.id}>{hero.name}</div>
+        <div key={hero.id}>
+          <Link to={`/rq-super-heroes/${hero.id}`}>{hero.name}</Link>
+        </div>
       ))}
     </div>
   );
