@@ -40,5 +40,32 @@
       "name": "Hulk",
       "alterEgo": "Bruce Banner"
     }
+  ],
+  "friends": [
+    {
+      "id": 1,
+      "name": "Chandler Bing",
+      "relationship": "Amigo de infância do Bruce Wayne" 
+    },
+    {
+      "id": 2,
+      "name": "Alfred Pennyworth",
+      "relationship": "Mordomo e mentor do Batman"
+    },
+    {
+      "id": 3,
+      "name": "Lois Lane",
+      "relationship": "Colega de trabalho e interesse romântico do Superman"
+    },
+    {
+      "id": 4,
+      "name": "Mary Jane Watson",
+      "relationship": "Interesse romântico do Homem-Aranha"
+    },
+    {
+      "id": 5,
+      "name": "Pepper Potts",
+      "relationship": "CEO da Stark Industries e parceira do Homem de Ferro"
+    }
   ]
 }

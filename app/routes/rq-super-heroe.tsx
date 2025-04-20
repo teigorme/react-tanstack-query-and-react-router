@@ -8,7 +8,7 @@ export default function RqSuperHeroe() {
   const { data, isLoading, error } = useQuery<Hero>({
     queryKey: ["super-hero", id],
     queryFn: () =>
-      fetch(`${BASEURL}/${id}`, {
+      fetch(`${BASEURL}/superheroes/${id}`, {
         headers: { "Content-Type": "application/json" },
       }).then((res) => res.json()),
   });

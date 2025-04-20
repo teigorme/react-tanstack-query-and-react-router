@@ -7,9 +7,9 @@ export default function RqSuperHeroes() {
   const { data, isLoading, error } = useQuery<Hero[]>({
     queryKey: ["super-heroes"],
     queryFn: () =>
-      fetch(BASEURL, { headers: { "Content-Type": "application/json" } }).then(
-        (res) => res.json()
-      ),
+      fetch(`${BASEURL}/superheroes`, {
+        headers: { "Content-Type": "application/json" },
+      }).then((res) => res.json()),
   });
 
   if (isLoading) return <h2>Carregando...</h2>;
