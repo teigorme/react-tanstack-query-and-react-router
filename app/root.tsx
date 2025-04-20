@@ -7,6 +7,7 @@ import {
 } from "react-router";
 import "./app.css";
 import type { Route } from "./+types/root";
+import Navbar from "components/navbar";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -25,6 +26,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Links />
       </head>
       <body>
+        <Navbar/>
         {children}
         <ScrollRestoration />
         <Scripts />
