@@ -1,7 +1,29 @@
-import React from 'react'
+import { useQuery } from "@tanstack/react-query";
+import { BASEURL } from "constants/base-url";
+import type { Hero } from "types/super-heroes";
 
 export default function RqSuperHeroes() {
+  const { data, isLoading, error } = useQuery<Hero[]>({
+    queryKey: ["super-heroes"],
+    queryFn: () =>
+      fetch(BASEURL, { headers: { "Content-Type": "application/json" } }).then(
+        (res) => res.json()
+      ),
+  });
+
+  if (isLoading) return <h2>Carregando...</h2>;
+  if (error) return <div>Error: {error.message}</div>;
+
+  if (!data) {
+    return <div>Nenhum heroi encontrado</div>;
+  }
+
   return (
-    <div>RqSuperHeroes</div>
-  )
+    <div>
+      <h2 className="text-2xl font-semibold">RQ Super Heroes</h2>
+      {data.map((hero) => (
+        <div key={hero.id}>{hero.name}</div>
+      ))}
+    </div>
+  );
 }
