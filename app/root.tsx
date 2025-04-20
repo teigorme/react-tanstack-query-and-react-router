@@ -3,6 +3,7 @@ import "./app.css";
 import type { Route } from "./+types/root";
 import Navbar from "components/navbar";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -24,6 +25,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Navbar />
         <QueryClientProvider client={queryClient}>
           <main className="px-4">{children}</main>
+          <ReactQueryDevtools initialIsOpen={false} />
         </QueryClientProvider>
         <ScrollRestoration />
         <Scripts />
