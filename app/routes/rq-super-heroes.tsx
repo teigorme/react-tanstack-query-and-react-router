@@ -1,4 +1,5 @@
 import { useQuery } from "@tanstack/react-query";
+import FormCreateSuperHeroes from "components/form-create-super-heroes";
 import { BASEURL } from "constants/base-url";
 import { Link } from "react-router";
 import type { Hero } from "types/super-heroes";
@@ -27,6 +28,8 @@ export default function RqSuperHeroes() {
           <Link to={`/rq-super-heroes/${hero.id}`}>{hero.name}</Link>
         </div>
       ))}
+
+      <FormCreateSuperHeroes />
     </div>
   );
 }

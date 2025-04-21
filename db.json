@@ -1,69 +1,119 @@
 {
   "superheroes": [
     {
-      "id": 1,
+      "id": "1",
       "name": "Batman",
       "alterEgo": "Bruce Wayne"
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Superman",
       "alterEgo": "Clark Kent"
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "Spider-Man",
       "alterEgo": "Peter Parker"
     },
     {
-      "id": 4,
+      "id": "4",
       "name": "Wonder Woman",
       "alterEgo": "Diana Prince"
     },
     {
-      "id": 5,
+      "id": "5",
       "name": "Iron Man",
       "alterEgo": "Tony Stark"
     },
     {
-      "id": 6,
+      "id": "6",
       "name": "Captain America",
       "alterEgo": "Steve Rogers"
     },
     {
-      "id": 7,
+      "id": "7",
       "name": "Black Panther",
       "alterEgo": "T'Challa"
     },
     {
-      "id": 8,
+      "id": "8",
       "name": "Hulk",
       "alterEgo": "Bruce Banner"
+    },
+    {
+      "id": "5f0c",
+      "email": "Python",
+      "alterEgo": "Criado com amor"
+    },
+    {
+      "id": "760d",
+      "email": "Shazam",
+      "alterEgo": "Bill Gates"
+    },
+    {
+      "id": "8286",
+      "email": "hhf",
+      "alterEgo": "ffs"
+    },
+    {
+      "id": "9c99",
+      "email": "Shazam",
+      "alterEgo": "Igor Teixeira"
+    },
+    {
+      "id": "3c55",
+      "email": "ff",
+      "alterEgo": "ff"
+    },
+    {
+      "id": "e870",
+      "email": "igorteixeira354@gmail.com",
+      "alterEgo": "Igor Teixeira"
+    },
+    {
+      "id": "b95b",
+      "email": "igorteixeira354@gmail.com",
+      "alterEgo": "ff"
+    },
+    {
+      "id": "b29e",
+      "email": "igorteixeira354@gmail.com",
+      "alterEgo": "ff"
+    },
+    {
+      "id": "13aa",
+      "email": "igorteixeira354@gmail.com",
+      "alterEgo": "ff"
+    },
+    {
+      "id": "1060",
+      "email": "igorteixeira354@gmail.com",
+      "alterEgo": "ff"
     }
   ],
   "friends": [
     {
-      "id": 1,
+      "id": "1",
       "name": "Chandler Bing",
-      "relationship": "Amigo de infância do Bruce Wayne" 
+      "relationship": "Amigo de infância do Bruce Wayne"
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Alfred Pennyworth",
       "relationship": "Mordomo e mentor do Batman"
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "Lois Lane",
       "relationship": "Colega de trabalho e interesse romântico do Superman"
     },
     {
-      "id": 4,
+      "id": "4",
       "name": "Mary Jane Watson",
       "relationship": "Interesse romântico do Homem-Aranha"
     },
     {
-      "id": 5,
+      "id": "5",
       "name": "Pepper Potts",
       "relationship": "CEO da Stark Industries e parceira do Homem de Ferro"
     }

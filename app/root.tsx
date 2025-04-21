@@ -11,7 +11,7 @@ export function meta({}: Route.MetaArgs) {
     { name: "description", content: "React Router!" },
   ];
 }
-const queryClient = new QueryClient();
+export const queryClient = new QueryClient();
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">

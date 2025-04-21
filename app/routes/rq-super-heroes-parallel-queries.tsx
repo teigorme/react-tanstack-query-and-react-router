@@ -4,7 +4,6 @@ import type { Friend } from "types/friends";
 import type { Hero } from "types/super-heroes";
 
 export default function RqSuperHeroesParallelQueries() {
-
   const results = useQueries({
     queries: [
       {
@@ -24,17 +23,14 @@ export default function RqSuperHeroesParallelQueries() {
     ],
   });
 
- 
   const [heroesResult, friendsResult] = results;
 
-
   const isLoading = heroesResult.isLoading || friendsResult.isLoading;
- 
+
   const error = heroesResult.error || friendsResult.error;
 
   if (isLoading) return <h2>Carregando...</h2>;
   if (error) return <div>Error: {error.message}</div>;
-
 
   const superheroes = heroesResult.data;
   const friends = friendsResult.data;
@@ -53,7 +49,7 @@ export default function RqSuperHeroesParallelQueries() {
           </li>
         ))}
       </ul>
-<hr />
+      <hr />
       <h2>Amigos</h2>
       <ul>
         {friends.map((friend) => (
